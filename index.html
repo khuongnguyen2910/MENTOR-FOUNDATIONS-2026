@@ -64,7 +64,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 /* ---------- 1. intro ---------- */
 #intro{position:fixed;inset:0;background:var(--stage);display:flex;align-items:center;justify-content:center;z-index:60;transition:opacity .9s ease,transform .9s ease}
 #intro.off{opacity:0;transform:scale(1.03);pointer-events:none}
-.mono{display:flex;flex-direction:column;align-items:center;gap:clamp(18px,4vw,30px);padding:24px}
+.mono{display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(18px,4vw,30px);padding:24px}
 .mark{width:clamp(92px,17vw,132px);height:auto;overflow:visible}
 .mark .fill{fill:#F4F7FF;opacity:0;animation:fillin 1s ease 2.15s forwards}
 .mark .line{fill:none;stroke:#CBD9F2;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;
@@ -83,7 +83,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .word{clip-path:inset(0 100% 0 0);opacity:.9;animation:wipe 1.1s cubic-bezier(.2,.7,.2,1) 2.7s forwards}
 @keyframes wipe{to{clip-path:inset(0 0 0 0);opacity:1}}
 .tagline{font-family:"Be Vietnam Pro",system-ui,sans-serif;font-size:.68rem;letter-spacing:.42em;
-  text-transform:uppercase;color:rgba(203,217,242,.5);opacity:0;animation:fillin .9s ease 3.5s forwards}
+  text-transform:uppercase;color:rgba(203,217,242,.5);opacity:0;animation:fillin .9s ease 3.5s forwards;
+  text-align:center;max-width:min(78vw,320px)}
 .skip{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
   font-family:"Be Vietnam Pro",system-ui,sans-serif;font-size:.72rem;letter-spacing:.14em;
   text-transform:uppercase;color:rgba(203,217,242,.34);opacity:0;animation:fillin .6s ease 1.6s forwards}
